@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Tambah Data Mata Kuliah::Sistem Penilaian IKD Dosen FIK</title>
+        <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">SIKAD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="add_matkul.html">Mata Kuliah</a>
+                <a class="nav-item nav-link" href="add_dosen.html">Dosen</a>
+                <a class="nav-item nav-link" href="add_prodi.html">Prodi</a>
+                <a class="nav-item nav-link active" href="add_mengajar.html">Mengajar<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="add_nilai_ajar.html">Kehadiran</a>
+              </div>
+            </div>
+          </nav>
+          <!--navbar-->
+          <!--Content-->
+        <div class="container-fluid p-5">
+            <h2 class="text-center">Tambah Data Mengajar</h2><hr/>
+            <form class="form-horizontal" action="" method="post">
+                
+                <div class="form-group mt-4">
+                    <label for="exampleFormControlSelect1">Hari</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option value="A">Senin</option>
+                        <option value="B">Selasa</option>
+                        <option value="C">Rabu</option>
+                        <option value="C">Kamis</option>
+                        <option value="C">Jumat</option>
+                        <option value="C">Sabtu</option>
+                    </select>
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="exampleFormControlInput1">Jam</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option value="A">07.00 - 08.40</option>
+                        <option value="B">08.40 - 09.30</option>
+                        <option value="C">09.30 - 10.20</option>
+                        <option value="D">10.20 - 12.00</option>
+                        <option value="E">12.40 - 14.20</option>
+                        <option value="F">14.20 - 15.30</option>
+                        <option value="G">15.30 - 16.20</option>
+                        <option value="H">16.20 - 18.00</option>
+                    </select>
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="exampleFormControlInput1">Mata Kuliah</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="exampleFormControlInput1">Dosen Pengampu</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
+</div>
+<!--Content-->
+<!--Scripts-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

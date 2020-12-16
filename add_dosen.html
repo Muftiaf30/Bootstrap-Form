@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Tambah Data Mata Kuliah::Sistem Penilaian IKD Dosen FIK</title>
+        <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">SIKAD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="add_matkul.html">Mata Kuliah</a>
+                <a class="nav-item nav-link active" href="add_dosen.html">Dosen<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="add_prodi.html">Prodi</a>
+                <a class="nav-item nav-link" href="add_mengajar.html">Mengajar</a>
+                <a class="nav-item nav-link" href="add_nilai_ajar.html">Kehadiran</a>
+              </div>
+            </div>
+          </nav>
+          <!--navbar-->
+          <!--Content-->
+        <div class="container-fluid p-5">
+            <h2 class="text-center">Tambah Data Dosen</h2><hr/>
+            <form class="form-horizontal" action="" method="post">
+                
+                  <div class="form-group mt-4">
+                    <label for="exampleFormControlInput1">Nama Dosen</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="exampleFormControlInput1">NIP Dosen</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="exampleFormControlTextarea1">Alamat</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="exampleFormControlSelect1">Jenis Kelamin</label>
+                    <div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                            <label class="form-check-label" for="inlineRadio1">Laki-laki</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                            <label class="form-check-label" for="inlineRadio2">Perempuan</label>
+                          </div>
+                    </div>
+                </div>
+                <div class="form-group mt-4">
+                    <label for="exampleFormControlSelect1">Jabatan</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option value="A11">Ketua Prodi</option>
+                        <option value="A12">Sekretaris Prodi</option>
+                        <option value="A14">Bendahara Prodi</option>
+                        <option value="A15">Dosen Pengampu</option>
+                       
+                    </select>
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="exampleFormControlInput1">Instansi</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="exampleFormControlInput1">Mata Kuliah</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                  </div>
+
+                 
+                 
+                  <div class="form-group mt-4"> 
+                    <label for="exampleFormControlSelect1">Semester</label>
+                        <input type="number" min="1" max="8" class="form-control col-xs-12 col-md-3 col-lg-2" name="fsmt">
+                    </div> 
+                    <div class="form-group mt-4">
+                        <label for="exampleFormControlSelect1">Jenis Matakuliah</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Teori</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Praktek</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                <label class="form-check-label" for="inlineRadio3">Teori/Praktek</label>
+                              </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
+</div>
+<!--Content-->
+<!--Scripts-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

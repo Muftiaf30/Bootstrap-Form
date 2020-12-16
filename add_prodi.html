@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Tambah Data Mata Kuliah::Sistem Penilaian IKD Dosen FIK</title>
+        <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">SIKAD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link" href="add_matkul.html">Mata Kuliah</a>
+                <a class="nav-item nav-link" href="add_dosen.html">Dosen</a>
+                <a class="nav-item nav-link active" href="add_prodi.html">Prodi<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="add_mengajar.html">Mengajar</a>
+                <a class="nav-item nav-link" href="add_nilai_ajar.html">Kehadiran</a>
+              </div>
+            </div>
+          </nav>
+          <!--navbar-->
+          <!--Content-->
+        <div class="container-fluid p-5">
+            <h2 class="text-center">Tambah Prodi</h2><hr/>
+            <form class="form-horizontal" action="" method="post">
+                
+                  <div class="form-group mt-4">
+                    <label for="exampleFormControlInput1">Kode Prodi</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="exampleFormControlInput1">Nama Prodi</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="exampleFormControlSelect1">Akreditasi</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                    </select>
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="exampleFormControlSelect1">Fakultas</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option value="A">Saintek</option>
+                        <option value="B">Psikologi</option>
+                        <option value="C">Adab & Humaniora</option>
+                        <option value="D">FISIP</option>
+                        <option value="E">Ekonomi Syariah</option>
+                        <option value="F">Ushuluddin</option>
+                    </select>
+                  </div>
+                  
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
+</div>
+<!--Content-->
+<!--Scripts-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

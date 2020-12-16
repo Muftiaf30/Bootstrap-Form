@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form Tambah Data Mata Kuliah::Sistem Penilaian IKD Dosen FIK</title>
+        <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">SIKAD</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link" href="index.html">Home</a>
+                <a class="nav-item nav-link active" href="add_matkul.html">Mata Kuliah<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="add_dosen.html">Dosen</a>
+                <a class="nav-item nav-link" href="add_prodi.html">Prodi</a>
+                <a class="nav-item nav-link" href="add_mengajar.html">Mengajar</a>
+                <a class="nav-item nav-link" href="add_nilai_ajar.html">Kehadiran</a>
+              </div>
+            </div>
+          </nav>
+          <!--navbar-->
+          <!--Content-->
+        <div class="container-fluid p-5">
+            <h2 class="text-center">Tambah Data Mata Kuliah</h2><hr/>
+            <form class="form-horizontal" action="" method="post">
+                <div class="form-group mt-4">
+                    <label for="exampleFormControlInput1">Kode Mata Kuliah</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="exampleFormControlInput1">Nama Mata Kuliah</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1">
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="exampleFormControlSelect1">Kode Prodi</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option value="A11">TI-S1</option>
+                        <option value="A12">SI-S1</option>
+                        <option value="A14">DKV</option>
+                        <option value="A15">Ilkom</option>
+                        <option value="A22">D3-TI</option>
+                        <option value="P31">Pasca</option>
+                    </select>
+                  </div>
+                  <div class="form-group mt-4">
+                    <label for="exampleFormControlSelect1">SKS</label>
+                    <select class="form-control" id="exampleFormControlSelect1">
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                    </select>
+                  </div>
+                  <div class="form-group mt-4"> 
+                    <label for="exampleFormControlSelect1">Semester</label>
+                        <input type="number" min="1" max="8" class="form-control col-xs-12 col-md-3 col-lg-2" name="fsmt">
+                    </div> 
+                    <div class="form-group mt-4">
+                        <label for="exampleFormControlSelect1">Jenis Matakuliah</label>
+                        <div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Teori</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Praktek</label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3">
+                                <label class="form-check-label" for="inlineRadio3">Teori/Praktek</label>
+                              </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Submit</button>
+                   
+
+
+
+                <!---->
+                <!---->
+        <!-- <div class="form-group">
+            <label class="control-label col-md-4" for="fkode matkul">
+                Kode mata kuliah</label>
+                <div class="col-md-3">
+                    <input type="text" class="form-control" name="fkode matkul">
+                </div>
+                <div class="form-group" for="fnama_matkul"> 
+            <label class="control-label col-md-4">Nama Mata Kuliah</label> 
+                <div class="col-md-6">
+                    <input type="text" class="form-control" name="fnama_matkul"></div>
+                </div>
+                <div class="form-group"><label class="control-label col-md-4" for="fkode_prodi">Kode prodi</label>
+                <div class="col-md-2">
+                    <select class="form-control" name="fkode_prodi" value="A24">Broadcasting<option>Sarjana</option> 
+                        <option></option> </option></option> <option></option><option></option><option></option>
+                        <option value="">--Pilih--</option>
+                        <option value="A11">TI-S1</option>
+                        <option value="A12">SI-S1</option>
+                        <option value="A14">DKV</option>
+                        <option value="A15">Ilkom</option>
+                        <option value="A22">D3-TI</option>
+                        <option value="P31">Pasca</option>
+                    </select></div> 
+                </div>
+                <div class="form-group"> 
+            <label class="control-label col-md-4" for="fsks">SKS</label>
+                <div class="col-md-2"> 
+                    <select class="form-control" name="fsks"><option value="">-pilih-</option><option value="2">2
+                        <option value="3">3<option value="4">4<option value="6">6
+                    </select>
+                </div>
+            </div>
+                <div class="form-group"> 
+            <label class="control-label col-md-4" for="fmdt">Semester</label>
+                <div class="col-md-1"> 
+                    <input type="number" min="1" max="8" class="form-control" name="fsmt">
+                </div>
+            </div> 
+                <div class="form-group"><label class="control-label col-md-4" for="fjenis_matkul">Jenis mata kuliah</label> 
+                <div class="col-md-8">
+                    <div class="radio"> 
+                        <label for="fjenis_matkul"><input type="radio" name="fjenis_matkul" value="1">Teori </label>
+                    </div>
+                    <div class="radio"> 
+                        <label for="fjenis_matkul"> <input type="radio" name="fjenis_matkul" value="2">Praktek </label> 
+                    </div>
+                    <div class="radio"> 
+                        <label for="fjenis_matkul"> <input type="radio" name="fjenis_matkul" value="3">Teori/Praktek </label> 
+                    </div>
+                </div>
+            </div>
+            -->
+        </form>
+    </div>
+</div>
+<!--Content-->
+<!--Scripts-->
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
